@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<AssemblyName>modernize</AssemblyName>
+	<RootNamespace>Std.Tools</RootNamespace>
+	<OutputType>Exe</OutputType>
+	<TargetFramework>net5.0</TargetFramework>
+    <DefineConstants>NETCOREAPP3_0</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DefineConstants>$(DefineConstants);TRACECOREAPP</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="DotNet.Glob" Version="3.1.2" />
+	<PackageReference Include="Serilog" Version="2.10.0" />
+	<PackageReference Include="Serilog.Enrichers.Demystify" Version="1.0.0-dev-00019" />
+	<PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+	<PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+	<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.9.0" />
+	<PackageReference Include="NuGet.Configuration" Version="5.9.0" />
+	<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Core\PathCompat.NETFramework.cs" />
+    <Compile Remove="Core\PathCompat.NETCore.cs" />
+  </ItemGroup>
+</Project>
