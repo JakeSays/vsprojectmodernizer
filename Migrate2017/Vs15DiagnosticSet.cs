@@ -1,7 +1,8 @@
-using Project2015To2017.Analysis;
-using Project2015To2017.Migrate2017.Diagnostics;
+using Std.Tools.Core.Analysis;
+using Std.Tools.Projects.Diagnostics;
 
-namespace Project2015To2017.Migrate2017
+
+namespace Std.Tools.Projects
 {
 	public static class Vs15DiagnosticSet
 	{

@@ -1,15 +1,17 @@
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+
 using System;
 using System.Globalization;
 using System.IO;
 using System.Threading;
 
+
 #if BUILDINGAPPXTASKS
 namespace Microsoft.Build.AppxPackage.Shared
 #else
-namespace Project2015To2017.Reading.Conditionals
+namespace Std.Tools.Core.Reading.Conditionals
 #endif
 {
 	/// <summary>
@@ -34,7 +36,7 @@ namespace Project2015To2017.Reading.Conditionals
 		#region VerifyThrow -- for internal errors
 
 		/// <summary>
-		/// Throws InternalErrorException. 
+		/// Throws InternalErrorException.
 		/// This is only for situations that would mean that there is a bug in MSBuild itself.
 		/// </summary>
 		internal static void ThrowInternalError(string message, params object[] args)
@@ -46,7 +48,7 @@ namespace Project2015To2017.Reading.Conditionals
 		}
 
 		/// <summary>
-		/// Throws InternalErrorException. 
+		/// Throws InternalErrorException.
 		/// This is only for situations that would mean that there is a bug in MSBuild itself.
 		/// </summary>
 		internal static void ThrowInternalError(string message, Exception innerException, params object[] args)
@@ -58,7 +60,7 @@ namespace Project2015To2017.Reading.Conditionals
 		}
 
 		/// <summary>
-		/// Throws InternalErrorException. 
+		/// Throws InternalErrorException.
 		/// Indicates the code path followed should not have been possible.
 		/// This is only for situations that would mean that there is a bug in MSBuild itself.
 		/// </summary>
@@ -71,7 +73,7 @@ namespace Project2015To2017.Reading.Conditionals
 		}
 
 		/// <summary>
-		/// Throws InternalErrorException. 
+		/// Throws InternalErrorException.
 		/// Indicates the code path followed should not have been possible.
 		/// This is only for situations that would mean that there is a bug in MSBuild itself.
 		/// </summary>
@@ -413,7 +415,7 @@ namespace Project2015To2017.Reading.Conditionals
 
 		/// <summary>
 		/// Throws an ArgumentException that can include an inner exception.
-		/// 
+		///
 		/// PERF WARNING: calling a method that takes a variable number of arguments
 		/// is expensive, because memory is allocated for the array of arguments -- do
 		/// not call this method repeatedly in performance-critical scenarios
@@ -429,7 +431,7 @@ namespace Project2015To2017.Reading.Conditionals
 
 		/// <summary>
 		/// Throws an ArgumentException that can include an inner exception.
-		/// 
+		///
 		/// PERF WARNING: calling a method that takes a variable number of arguments
 		/// is expensive, because memory is allocated for the array of arguments -- do
 		/// not call this method repeatedly in performance-critical scenarios
@@ -705,7 +707,7 @@ namespace Project2015To2017.Reading.Conditionals
 		{
 			if (parameter == null && s_throwExceptions)
 			{
-				// Most ArgumentNullException overloads append its own rather clunky multi-line message. 
+				// Most ArgumentNullException overloads append its own rather clunky multi-line message.
 				// So use the one overload that doesn't.
 				throw new ArgumentNullException(
 					String.Format(CultureInfo.CurrentCulture, resourceName, parameterName),

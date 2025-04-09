@@ -1,4 +1,4 @@
-namespace Project2015To2017.Caching
+namespace Std.Tools.Core.Caching
 {
 	public interface IProjectCache
 	{

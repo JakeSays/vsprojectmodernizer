@@ -4,7 +4,7 @@
 	<AssemblyName>modernize</AssemblyName>
 	<RootNamespace>Std.Tools</RootNamespace>
 	<OutputType>Exe</OutputType>
-	<TargetFramework>net5.0</TargetFramework>
+	<TargetFramework>net8.0</TargetFramework>
     <DefineConstants>NETCOREAPP3_0</DefineConstants>
   </PropertyGroup>
 

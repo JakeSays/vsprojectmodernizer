@@ -2,7 +2,8 @@ using System;
 using System.IO;
 using System.Xml.Linq;
 
-namespace Project2015To2017.Definition
+
+namespace Std.Tools.Core.Definition
 {
 	public sealed class ProjectReference : IReference
 	{

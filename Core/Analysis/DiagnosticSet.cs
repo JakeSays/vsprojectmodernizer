@@ -1,7 +1,8 @@
-using Project2015To2017.Analysis.Diagnostics;
 using System.Collections.Generic;
+using Std.Tools.Core.Analysis.Diagnostics;
 
-namespace Project2015To2017.Analysis
+
+namespace Std.Tools.Core.Analysis
 {
 	public sealed class DiagnosticSet : HashSet<IDiagnostic>
 	{

@@ -1,7 +1,8 @@
 using System.Collections.Concurrent;
-using Project2015To2017.Definition;
+using Std.Tools.Core.Definition;
 
-namespace Project2015To2017.Caching
+
+namespace Std.Tools.Core.Caching
 {
 	public sealed class DefaultProjectCache : IProjectCache
 	{

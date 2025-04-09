@@ -1,11 +1,9 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Project2015To2017.Analysis;
+using Std.Tools.Core;
+using Std.Tools.Core.Analysis;
 
-namespace Project2015To2017.Migrate2017.Tool
+
+namespace Std.Tools
 {
 	public sealed class WizardTransformationSets
 	{

@@ -2,7 +2,8 @@ using System;
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 
-namespace Project2015To2017.Transforms
+
+namespace Std.Tools.Core.Transforms
 {
 	public sealed class BasicSimplifyTransformationSet : ITransformationSet
 	{

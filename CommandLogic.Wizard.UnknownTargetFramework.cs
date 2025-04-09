@@ -4,10 +4,11 @@ using System.Collections.Immutable;
 using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
-using Project2015To2017.Definition;
 using Serilog;
+using Std.Tools.Core.Definition;
 
-namespace Project2015To2017.Migrate2017.Tool
+
+namespace Std.Tools
 {
 	public partial class CommandLogic
 	{

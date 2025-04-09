@@ -1,9 +1,10 @@
 using System;
-using Project2015To2017.Definition;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using Std.Tools.Core.Definition;
 
-namespace Project2015To2017.Analysis.Diagnostics
+
+namespace Std.Tools.Core.Analysis.Diagnostics
 {
 	public sealed class W001IllegalProjectTypeDiagnostic : DiagnosticBase
 	{

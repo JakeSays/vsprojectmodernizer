@@ -1,11 +1,10 @@
-using Project2015To2017.Definition;
-using Project2015To2017.Reading;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Xml.Linq;
+using Std.Tools.Core.Definition;
+using Std.Tools.Core.Reading;
 
-namespace Project2015To2017.Analysis.Diagnostics
+
+namespace Std.Tools.Core.Analysis.Diagnostics
 {
 	public sealed class W010ConfigurationsMismatchDiagnostic : DiagnosticBase
 	{

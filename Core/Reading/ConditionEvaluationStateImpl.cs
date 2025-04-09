@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Project2015To2017.Reading.Conditionals;
+using Std.Tools.Core.Reading.Conditionals;
 
-namespace Project2015To2017.Reading
+
+namespace Std.Tools.Core.Reading
 {
 	internal sealed class ConditionEvaluationStateImpl : IConditionEvaluationState
 	{

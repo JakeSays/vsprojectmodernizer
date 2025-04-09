@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
-using Project2015To2017.Transforms;
+using Std.Tools.Core.Transforms;
 
-namespace Project2015To2017
+
+namespace Std.Tools.Core
 {
 	public class NoopTransformationSet : ITransformationSet
 	{

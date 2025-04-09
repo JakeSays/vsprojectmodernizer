@@ -1,7 +1,8 @@
 using System;
 using System.IO;
 
-namespace Project2015To2017
+
+namespace Std.Tools.Core
 {
 	/// <summary>
 	/// https://stackoverflow.com/a/31941159

@@ -3,7 +3,8 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Project2015To2017
+
+namespace Std.Tools.Core
 {
 	public static partial class Extensions
 	{

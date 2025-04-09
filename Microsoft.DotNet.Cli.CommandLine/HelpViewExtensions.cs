@@ -1,13 +1,14 @@
 // Copyright (c) .NET Foundation and contributors. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+
 using System;
 using System.Linq;
 using System.Text;
 using static System.Environment;
-using static Microsoft.DotNet.Cli.CommandLine.DefaultHelpViewText;
+using static Std.Tools.Microsoft.DotNet.Cli.CommandLine.DefaultHelpViewText;
 
-namespace Microsoft.DotNet.Cli.CommandLine
+namespace Std.Tools.Microsoft.DotNet.Cli.CommandLine
 {
 	public static class HelpViewExtensions
 	{

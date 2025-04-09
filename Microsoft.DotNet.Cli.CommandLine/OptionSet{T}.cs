@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
-namespace Microsoft.DotNet.Cli.CommandLine
+
+namespace Std.Tools.Microsoft.DotNet.Cli.CommandLine
 {
 	[DebuggerStepThrough]
 	public abstract class OptionSet<T> : IReadOnlyCollection<T>

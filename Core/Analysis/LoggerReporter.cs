@@ -2,7 +2,8 @@ using System;
 using System.Text;
 using Microsoft.Extensions.Logging;
 
-namespace Project2015To2017.Analysis
+
+namespace Std.Tools.Core.Analysis
 {
 	public sealed class LoggerReporter : ReporterBase<LoggerReporterOptions>
 	{

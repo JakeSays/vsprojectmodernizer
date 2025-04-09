@@ -2,7 +2,8 @@ using System;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace Project2015To2017.Analysis
+
+namespace Std.Tools.Core.Analysis
 {
 	public static class AnalysisExtensions
 	{

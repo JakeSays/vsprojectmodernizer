@@ -2,10 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Extensions.Logging;
-using Project2015To2017.Definition;
-using Project2015To2017.Transforms;
+using Std.Tools.Core.Definition;
+using Std.Tools.Core.Transforms;
 
-namespace Project2015To2017
+
+namespace Std.Tools.Core
 {
 	public static partial class Extensions
 	{

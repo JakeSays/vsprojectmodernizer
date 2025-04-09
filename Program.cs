@@ -1,16 +1,16 @@
 using System;
-using Microsoft.DotNet.Cli.CommandLine;
-using Project2015To2017.Analysis;
-using Project2015To2017.Caching;
-using Project2015To2017.Migrate2017.Tool;
-using Project2015To2017.Migrate2019.Library;
-using Project2015To2017.Transforms;
 using Serilog;
 using Serilog.Events;
-using static Microsoft.DotNet.Cli.CommandLine.Accept;
-using static Microsoft.DotNet.Cli.CommandLine.Create;
+using Std.Tools.Core;
+using Std.Tools.Core.Analysis;
+using Std.Tools.Core.Caching;
+using Std.Tools.Core.Transforms;
+using Std.Tools.Microsoft.DotNet.Cli.CommandLine;
+using Std.Tools.Migrate2019;
+using static Std.Tools.Microsoft.DotNet.Cli.CommandLine.Accept;
+using static Std.Tools.Microsoft.DotNet.Cli.CommandLine.Create;
 
-namespace Project2015To2017.Migrate2019.Tool
+namespace Std.Tools
 {
 	internal static class Program
 	{

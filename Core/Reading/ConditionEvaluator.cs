@@ -1,10 +1,11 @@
-using Project2015To2017.Reading.Conditionals;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Text.RegularExpressions;
+using Std.Tools.Core.Reading.Conditionals;
 
-namespace Project2015To2017.Reading
+
+namespace Std.Tools.Core.Reading
 {
 	internal static partial class ConditionEvaluator
 	{

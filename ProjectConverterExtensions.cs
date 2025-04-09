@@ -1,12 +1,14 @@
-using Microsoft.Extensions.Logging;
-using Project2015To2017.Definition;
-using Project2015To2017.Reading;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Microsoft.Extensions.Logging;
+using Std.Tools.Core;
+using Std.Tools.Core.Definition;
+using Std.Tools.Core.Reading;
 
-namespace Project2015To2017
+
+namespace Std.Tools
 {
 	public static class ProjectConverterExtensions
 	{

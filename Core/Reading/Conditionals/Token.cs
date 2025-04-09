@@ -1,7 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-namespace Project2015To2017.Reading.Conditionals
+namespace Std.Tools.Core.Reading.Conditionals
 {
 	/// <summary>
 	/// This class represents a token in the Complex Conditionals grammar.  It's

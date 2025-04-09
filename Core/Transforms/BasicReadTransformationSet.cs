@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 
-namespace Project2015To2017.Transforms
+
+namespace Std.Tools.Core.Transforms
 {
 	public class BasicReadTransformationSet : ITransformationSet
 	{

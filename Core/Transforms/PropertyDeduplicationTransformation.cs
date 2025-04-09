@@ -1,60 +1,64 @@
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
-using Project2015To2017.Definition;
+using Std.Tools.Core.Definition;
 
-namespace Project2015To2017.Transforms
+
+namespace Std.Tools.Core.Transforms
 {
-	public sealed class PropertyDeduplicationTransformation : ITransformationWithDependencies
-	{
-		public void Transform(Project definition)
-		{
-			var props = definition
-				.ConditionalGroups()
-				.Select(x => (
-					x,
-					x.Elements()
-						.Where(c => !c.HasElements)
-						.Select(c => c.Name.LocalName)
-						.ToImmutableHashSet()
-				))
-				.ToImmutableArray();
+    public sealed class PropertyDeduplicationTransformation : ITransformationWithDependencies
+    {
+        public void Transform(Project definition)
+        {
+            var props = definition
+                .ConditionalGroups()
+                .Select(x => (
+                    x,
+                    x.Elements()
+                        .Where(c => !c.HasElements)
+                        .Select(c => c.Name.LocalName)
+                        .ToImmutableHashSet()
+                )).ToImmutableArray();
 
-			if (props.Length == 0)
-			{
-				return;
-			}
+            if (props.Length == 0)
+            {
+                return;
+            }
 
-			var intersection = props.First().Item2;
-			foreach (var (_, nameSet) in props.Skip(1))
-			{
-				intersection = intersection.Intersect(nameSet);
-			}
+            var intersection = props.First().Item2;
 
-			if (intersection.IsEmpty)
-			{
-				return;
-			}
+            foreach (var (_, nameSet) in props.Skip(1))
+            {
+                intersection = intersection.Intersect(nameSet);
+            }
 
-			foreach (var commonKey in intersection)
-			{
-				var properties = props.Select(x => x.Item1.Element(x.Item1.Name.Namespace + commonKey)).ToImmutableArray();
-				var values = properties.Select(x => x.Value).ToImmutableHashSet();
-				if (values.Count != 1) continue;
+            if (intersection.IsEmpty)
+            {
+                return;
+            }
 
-				foreach (var property in properties)
-				{
-					property.Remove();
-				}
+            foreach (var commonKey in intersection)
+            {
+                var properties = props.Select(x => x.Item1.Element(x.Item1.Name.Namespace + commonKey))
+                    .ToImmutableArray();
 
-				var sourceForCopy = properties.First();
-				definition.PrimaryPropertyGroup().Add(sourceForCopy);
-			}
-		}
+                var values = properties.Select(x => x.Value).ToImmutableHashSet();
 
-		public IReadOnlyCollection<string> DependOn => new[]
-		{
-			typeof(PropertySimplificationTransformation).Name,
-		};
-	}
+                if (values.Count != 1)
+                {
+                    continue;
+                }
+
+                foreach (var property in properties)
+                {
+                    property.Remove();
+                }
+
+                var sourceForCopy = properties.First();
+                definition.PrimaryPropertyGroup().Add(sourceForCopy);
+            }
+        }
+
+        public IReadOnlyCollection<string> DependOn => new[] { nameof(PropertySimplificationTransformation) };
+    }
 }

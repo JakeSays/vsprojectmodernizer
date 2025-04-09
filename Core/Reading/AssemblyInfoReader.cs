@@ -1,15 +1,14 @@
 using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.Extensions.Logging;
-using Project2015To2017.Definition;
+using Std.Tools.Core.Definition;
 
-namespace Project2015To2017.Reading
+
+namespace Std.Tools.Core.Reading
 {
 	public sealed class AssemblyInfoReader
 	{

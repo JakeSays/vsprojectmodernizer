@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 
-namespace Microsoft.DotNet.Cli.CommandLine
+
+namespace Std.Tools.Microsoft.DotNet.Cli.CommandLine
 {
 	public class AppliedOptionSet : OptionSet<AppliedOption>
 	{

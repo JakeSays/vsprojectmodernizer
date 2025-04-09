@@ -1,7 +1,8 @@
 using System.Collections.Generic;
-using Project2015To2017.Definition;
+using Std.Tools.Core.Definition;
 
-namespace Project2015To2017.Analysis
+
+namespace Std.Tools.Core.Analysis
 {
 	public abstract class ReporterBase<TOptions> : IReporter<TOptions> where TOptions : IReporterOptions
 	{

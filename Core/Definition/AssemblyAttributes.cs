@@ -8,7 +8,8 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace Project2015To2017.Definition
+
+namespace Std.Tools.Core.Definition
 {
 	public sealed class AssemblyAttributes : IEquatable<AssemblyAttributes>
 	{

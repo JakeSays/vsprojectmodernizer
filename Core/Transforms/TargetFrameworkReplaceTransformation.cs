@@ -1,42 +1,44 @@
 using System.Collections.Generic;
-using Project2015To2017.Definition;
+using Std.Tools.Core.Definition;
 
-namespace Project2015To2017.Transforms
+
+namespace Std.Tools.Core.Transforms
 {
-	public sealed class TargetFrameworkReplaceTransformation : ITransformationWithTargetMoment
-	{
-		public TargetFrameworkReplaceTransformation(
-			IReadOnlyList<string> targetFrameworks,
-			bool appendTargetFrameworkToOutputPath = true)
-		{
-			this.TargetFrameworks = targetFrameworks;
-			this.AppendTargetFrameworkToOutputPath = appendTargetFrameworkToOutputPath;
-		}
+    public sealed class TargetFrameworkReplaceTransformation : ITransformationWithTargetMoment
+    {
+        public TargetFrameworkReplaceTransformation(IReadOnlyList<string> targetFrameworks,
+            bool appendTargetFrameworkToOutputPath = true)
+        {
+            TargetFrameworks = targetFrameworks;
+            AppendTargetFrameworkToOutputPath = appendTargetFrameworkToOutputPath;
+        }
 
-		public void Transform(Project definition)
-		{
-			if (null == definition)
-			{
-				return;
-			}
+        public IReadOnlyList<string> TargetFrameworks { get; }
+        public bool AppendTargetFrameworkToOutputPath { get; }
 
-			if (this.TargetFrameworks != null && this.TargetFrameworks.Count > 0)
-			{
-				definition.TargetFrameworks.Clear();
-				foreach (var targetFramework in this.TargetFrameworks)
-				{
-					definition.TargetFrameworks.Add(targetFramework);
-				}
-			}
+        public void Transform(Project definition)
+        {
+            if (definition == null)
+            {
+                return;
+            }
 
-			if (!this.AppendTargetFrameworkToOutputPath)
-				definition.AppendTargetFrameworkToOutputPath = false;
-		}
+            if (TargetFrameworks is { Count: > 0 })
+            {
+                definition.TargetFrameworks.Clear();
 
-		public IReadOnlyList<string> TargetFrameworks { get; }
-		public bool AppendTargetFrameworkToOutputPath { get; }
+                foreach (var targetFramework in TargetFrameworks)
+                {
+                    definition.TargetFrameworks.Add(targetFramework);
+                }
+            }
 
-		public TargetTransformationExecutionMoment ExecutionMoment =>
-			TargetTransformationExecutionMoment.Early;
-	}
+            if (!AppendTargetFrameworkToOutputPath)
+            {
+                definition.AppendTargetFrameworkToOutputPath = false;
+            }
+        }
+
+        public TargetTransformationExecutionMoment ExecutionMoment => TargetTransformationExecutionMoment.Early;
+    }
 }

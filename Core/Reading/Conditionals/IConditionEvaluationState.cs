@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 
-namespace Project2015To2017.Reading.Conditionals
+
+namespace Std.Tools.Core.Reading.Conditionals
 {
 	internal interface IConditionEvaluationState
 	{

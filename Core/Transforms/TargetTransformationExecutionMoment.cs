@@ -1,4 +1,4 @@
-namespace Project2015To2017.Transforms
+namespace Std.Tools.Core.Transforms
 {
 	public enum TargetTransformationExecutionMoment : byte
 	{

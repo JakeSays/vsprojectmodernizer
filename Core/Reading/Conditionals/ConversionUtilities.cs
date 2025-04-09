@@ -1,12 +1,13 @@
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+
 using System;
 using System.Globalization;
 using System.Text;
-using error = Project2015To2017.Reading.Conditionals.ErrorUtilities;
+using error = Std.Tools.Core.Reading.Conditionals.ErrorUtilities;
 
-namespace Project2015To2017.Reading.Conditionals
+namespace Std.Tools.Core.Reading.Conditionals
 {
 	/// <summary>
 	/// This class contains only static methods, which are useful throughout many

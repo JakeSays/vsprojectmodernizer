@@ -1,6 +1,7 @@
-using Project2015To2017.Definition;
+using Std.Tools.Core.Definition;
 
-namespace Project2015To2017.Analysis
+
+namespace Std.Tools.Core.Analysis
 {
 	public sealed class DiagnosticResult : IDiagnosticResult
 	{

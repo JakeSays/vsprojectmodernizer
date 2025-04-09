@@ -1,6 +1,7 @@
-using Microsoft.DotNet.Cli.CommandLine;
+using Std.Tools.Microsoft.DotNet.Cli.CommandLine;
 
-namespace Project2015To2017.Migrate2017.Tool
+
+namespace Std.Tools
 {
 	internal static partial class ProgramBase
 	{

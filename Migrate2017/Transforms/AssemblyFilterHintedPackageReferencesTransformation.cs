@@ -1,9 +1,11 @@
 using System.IO;
 using System.Linq;
-using Project2015To2017.Definition;
-using Project2015To2017.Transforms;
+using Std.Tools.Core;
+using Std.Tools.Core.Definition;
+using Std.Tools.Core.Transforms;
 
-namespace Project2015To2017.Migrate2017.Transforms
+
+namespace Std.Tools.Projects.Transforms
 {
 	public sealed class AssemblyFilterHintedPackageReferencesTransformation : ILegacyOnlyProjectTransformation
 	{

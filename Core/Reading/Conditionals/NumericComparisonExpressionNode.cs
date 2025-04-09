@@ -1,9 +1,11 @@
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+
 using System;
 
-namespace Project2015To2017.Reading.Conditionals
+
+namespace Std.Tools.Core.Reading.Conditionals
 {
 	/// <summary>
 	/// Evaluates a numeric comparison, such as less-than, or greater-or-equal-than

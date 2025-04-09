@@ -1,8 +1,9 @@
-using Project2015To2017.Definition;
 using System;
 using System.Collections.Generic;
+using Std.Tools.Core.Definition;
 
-namespace Project2015To2017.Analysis.Diagnostics
+
+namespace Std.Tools.Core.Analysis.Diagnostics
 {
 	public sealed class W002MissingProjectFileDiagnostic : DiagnosticBase
 	{

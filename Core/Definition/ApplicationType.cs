@@ -1,4 +1,4 @@
-namespace Project2015To2017.Definition
+namespace Std.Tools.Core.Definition
 {
 	public enum ApplicationType
 	{

@@ -1,8 +1,9 @@
 using System;
 using System.Linq;
-using Project2015To2017.Definition;
+using Std.Tools.Core.Definition;
 
-namespace Project2015To2017
+
+namespace Std.Tools.Core
 {
 	/// <summary>
 	/// Helper library to filter out unsupported project types

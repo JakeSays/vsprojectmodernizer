@@ -1,9 +1,10 @@
-using Project2015To2017.Definition;
-using Project2015To2017.Reading;
 using System;
-using Project2015To2017.Analysis.Diagnostics;
+using Std.Tools.Core.Analysis.Diagnostics;
+using Std.Tools.Core.Definition;
+using Std.Tools.Core.Reading;
 
-namespace Project2015To2017.Analysis
+
+namespace Std.Tools.Core.Analysis
 {
 	public sealed class Analyzer<TReporter, TReporterOptions>
 		where TReporter : class, IReporter<TReporterOptions>

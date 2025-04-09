@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using NuGet.Configuration;
 
-namespace Project2015To2017.Definition
+
+namespace Std.Tools.Core.Definition
 {
 	public sealed class Solution
 	{

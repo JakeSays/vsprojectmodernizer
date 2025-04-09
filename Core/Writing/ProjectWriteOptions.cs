@@ -1,7 +1,8 @@
 using System;
 using System.IO;
 
-namespace Project2015To2017.Writing
+
+namespace Std.Tools.Core.Writing
 {
 	public class ProjectWriteOptions
 	{

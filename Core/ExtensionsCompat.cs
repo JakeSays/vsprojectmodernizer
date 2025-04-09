@@ -1,6 +1,7 @@
 using System.IO;
 
-namespace Project2015To2017
+
+namespace Std.Tools.Core
 {
 	public static partial class Extensions
 	{

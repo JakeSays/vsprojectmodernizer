@@ -1,6 +1,4 @@
-using System.IO;
-
-namespace Project2015To2017.Analysis
+namespace Std.Tools.Core.Analysis
 {
 	public interface IReporterOptions
 	{

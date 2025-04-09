@@ -1,16 +1,15 @@
-using Microsoft.Extensions.Logging;
-using Project2015To2017.Definition;
-using Project2015To2017.Reading;
-using Project2015To2017.Transforms;
-using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Runtime.CompilerServices;
+using Microsoft.Extensions.Logging;
+using Std.Tools.Core.Definition;
+using Std.Tools.Core.Reading;
+using Std.Tools.Core.Transforms;
+
 
 [assembly: InternalsVisibleTo("Project2015To2017.Tests")]
 
-namespace Project2015To2017
+namespace Std.Tools.Core
 {
 	public sealed class ProjectConverter
 	{

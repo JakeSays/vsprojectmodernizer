@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Immutable;
 using System.Linq;
-using Project2015To2017.Definition;
-using Project2015To2017.Transforms;
+using Std.Tools.Core.Definition;
+using Std.Tools.Core.Transforms;
 
-namespace Project2015To2017.Migrate2019.Library.Transforms
+
+namespace Std.Tools.Migrate2019.Transforms
 {
 	public sealed class Vs16FrameworkReferencesTransformation : ILegacyOnlyProjectTransformation
 	{

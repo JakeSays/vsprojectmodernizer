@@ -1,7 +1,8 @@
 using System;
 using Microsoft.Extensions.Logging;
 
-namespace Project2015To2017
+
+namespace Std.Tools.Core
 {
 	public sealed class NoopLogger : ILogger, IDisposable
 	{

@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
 using Microsoft.Extensions.Logging;
-using Project2015To2017.Definition;
+using Std.Tools.Core.Definition;
 
-namespace Project2015To2017.Reading
+
+namespace Std.Tools.Core.Reading
 {
 	public sealed class SolutionReader
 	{

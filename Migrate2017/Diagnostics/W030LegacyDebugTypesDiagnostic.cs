@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
-using Project2015To2017.Analysis;
-using Project2015To2017.Definition;
+using Std.Tools.Core.Analysis;
+using Std.Tools.Core.Definition;
 
-namespace Project2015To2017.Migrate2017.Diagnostics
+
+namespace Std.Tools.Projects.Diagnostics
 {
 	public sealed class W030LegacyDebugTypesDiagnostic : DiagnosticBase
 	{

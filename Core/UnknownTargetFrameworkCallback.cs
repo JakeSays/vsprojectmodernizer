@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using System.Xml.Linq;
-using Project2015To2017.Definition;
+using Std.Tools.Core.Definition;
 
-namespace Project2015To2017
+
+namespace Std.Tools.Core
 {
 	/// <summary>
 	/// Action that will be executed when project reader cannot unambiguously determine target frameworks

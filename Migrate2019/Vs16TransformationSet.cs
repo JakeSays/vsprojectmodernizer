@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
-using Project2015To2017.Migrate2017.Transforms;
-using Project2015To2017.Migrate2019.Library.Transforms;
-using Project2015To2017.Transforms;
+using Std.Tools.Core;
+using Std.Tools.Core.Transforms;
+using Std.Tools.Projects.Transforms;
+using Std.Tools.Migrate2019.Transforms;
 
-namespace Project2015To2017.Migrate2019.Library
+
+namespace Std.Tools.Migrate2019
 {
 	public sealed class Vs16TransformationSet : ITransformationSet
 	{

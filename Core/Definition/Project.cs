@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Xml.Linq;
 using NuGet.Configuration;
 
-namespace Project2015To2017.Definition
+
+namespace Std.Tools.Core.Definition
 {
 	public sealed class Project
 	{

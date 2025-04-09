@@ -1,12 +1,11 @@
 using System;
 using System.Collections.Generic;
-using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
 using System.Xml.Linq;
-using Project2015To2017.Transforms;
 
-namespace Project2015To2017.Definition
+
+namespace Std.Tools.Core.Definition
 {
 	public static class ProjectExtensions
 	{

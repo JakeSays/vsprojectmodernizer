@@ -1,17 +1,19 @@
 using System;
-using Microsoft.Extensions.Logging;
-using Project2015To2017.Analysis;
-using Project2015To2017.Definition;
-using Project2015To2017.Migrate2017;
-using Project2015To2017.Reading;
-using Project2015To2017.Transforms;
-using Project2015To2017.Writing;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
+using Microsoft.Extensions.Logging;
+using Std.Tools.Core;
+using Std.Tools.Core.Analysis;
+using Std.Tools.Core.Definition;
+using Std.Tools.Core.Reading;
+using Std.Tools.Core.Transforms;
+using Std.Tools.Core.Writing;
+using Std.Tools.Projects;
 
-namespace Project2015To2017
+
+namespace Std.Tools
 {
 	public class MigrationFacility
 	{

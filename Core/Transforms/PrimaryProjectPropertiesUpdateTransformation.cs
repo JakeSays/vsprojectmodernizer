@@ -2,9 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
-using Project2015To2017.Definition;
+using Std.Tools.Core.Definition;
 
-namespace Project2015To2017.Transforms
+
+namespace Std.Tools.Core.Transforms
 {
 	public sealed class PrimaryProjectPropertiesUpdateTransformation : ITransformationWithTargetMoment
 	{

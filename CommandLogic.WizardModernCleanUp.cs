@@ -1,24 +1,26 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using Project2015To2017.Definition;
-using Project2015To2017.Writing;
 using Serilog;
+using Std.Tools.Core;
+using Std.Tools.Core.Definition;
+using Std.Tools.Core.Writing;
 
-namespace Project2015To2017.Migrate2017.Tool
+
+namespace Std.Tools
 {
 	public partial class CommandLogic
 	{
 		private void WizardModernCleanUp(IReadOnlyList<Project> modern, ITransformationSet transformationSet,
 			ConversionOptions conversionOptions)
 		{
-			var transformations = transformationSet.CollectAndOrderTransformations(facility.Logger, conversionOptions);
+			var transformations = transformationSet.CollectAndOrderTransformations(_facility.Logger, conversionOptions);
 
-			var writer = new ProjectWriter(facility.Logger, new ProjectWriteOptions());
+			var writer = new ProjectWriter(_facility.Logger, new ProjectWriteOptions());
 
 			foreach (var project in modern)
 			{
-				using (facility.Logger.BeginScope(project.FilePath))
+				using (_facility.Logger.BeginScope(project.FilePath))
 				{
 					var projectName = Path.GetFileNameWithoutExtension(project.FilePath.Name);
 					Log.Information("Processing {ProjectName}...", projectName);

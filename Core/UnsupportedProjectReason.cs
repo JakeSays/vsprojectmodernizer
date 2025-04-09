@@ -1,4 +1,4 @@
-namespace Project2015To2017
+namespace Std.Tools.Core
 {
 	public enum UnsupportedProjectReason
 	{

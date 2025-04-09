@@ -1,9 +1,9 @@
-using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using Project2015To2017.Transforms;
+using Std.Tools.Core.Transforms;
 
-namespace Project2015To2017
+
+namespace Std.Tools.Core
 {
 	public sealed class ConversionOptions
 	{

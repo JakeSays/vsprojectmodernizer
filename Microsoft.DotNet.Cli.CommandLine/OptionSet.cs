@@ -1,8 +1,7 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace Microsoft.DotNet.Cli.CommandLine
+
+namespace Std.Tools.Microsoft.DotNet.Cli.CommandLine
 {
 	public class OptionSet : OptionSet<Option>
 	{

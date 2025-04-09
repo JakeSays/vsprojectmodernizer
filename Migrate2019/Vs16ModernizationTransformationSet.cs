@@ -1,9 +1,11 @@
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
-using Project2015To2017.Migrate2017;
-using Project2015To2017.Transforms;
+using Std.Tools.Core;
+using Std.Tools.Core.Transforms;
+using Std.Tools.Projects;
 
-namespace Project2015To2017.Migrate2019.Library
+
+namespace Std.Tools.Migrate2019
 {
 	public sealed class Vs16ModernizationTransformationSet : ITransformationSet
 	{

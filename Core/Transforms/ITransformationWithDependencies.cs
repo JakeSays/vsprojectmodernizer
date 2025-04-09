@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 
-namespace Project2015To2017.Transforms
+
+namespace Std.Tools.Core.Transforms
 {
 	public interface ITransformationWithDependencies : ITransformation
 	{
